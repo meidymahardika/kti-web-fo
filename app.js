@@ -1,4 +1,4 @@
-const express = require('express'); 
+const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
 const path = require('path');
 const app = express();
@@ -19,7 +19,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Routes
 app.get('/', (req, res) => {
     res.render('pages/home', {
-        title: 'Home Page',
+        title: 'KTI',
         content: 'Welcome to our website'
     });
 });
